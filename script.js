@@ -57,8 +57,6 @@ function getAnswer() {
             }
 
             
-            console.log(myObjQuestion)
-            
             let rAnswer;
 
             submitButton.onclick = () => {
@@ -85,6 +83,7 @@ function getAnswer() {
         }
     }
     jsonObj.open("GET", "http://myjson.dit.upm.es/api/bins/53cm", true)
+    jsonObj.open("GET", "Qus-Json.json", true)
     jsonObj.send()
 }
 getAnswer()
