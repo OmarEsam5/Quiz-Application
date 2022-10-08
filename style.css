@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Tahoma, Arial;
+}
+.ques-container {
+    background-color: rgb(248, 248, 248);
+    /* width: 800px; */
+    margin: 20px auto;
+    padding: 15px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.body {
+    background-color: #fff;
+    padding: 20px;
+}
+.body .quiz-area h2 {
+    margin: 0 0 20px;
+}
+.body .answer-area {
+    background-color: rgb(248, 248, 248);
+}
+.body .answer-area .answer {
+    padding: 15px;
+}
+.body .answer-area .answer:not(:last-child) {
+    border-bottom: 1px solid rgb(223, 223, 223);;
+}
+.body .answer-area .answer label {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+    color: #000000bf;
+}
+.body .answer-area .answer input:checked + label {
+    color: rgb(0, 117, 255);
+}
+.submit-button {
+    border: none;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(0, 117, 255);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid rgb(223, 223, 223);;
+    background-color: #fff;
+}
+.footer .bulets {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+.footer .bulets span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(221, 221, 221);
+}
+.footer .bulets span.on {
+    background-color: rgb(0, 117, 255);
+}
+.result {
+    padding: 10px;
+    background-color: white;
+}
+.result span.good {
+    color: rgb(22, 213, 238);
+}
+.result span.perfect {
+    color: green;
+}
+.result span.bad {
+    color: rgba(255, 0, 0, 0.671);
+}
+.reseat.show {
+    text-align: center;
+    padding: 9px;
+    width: 85px;
+    height: 40px;
+    background-color: springgreen;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px auto 0;
+}
